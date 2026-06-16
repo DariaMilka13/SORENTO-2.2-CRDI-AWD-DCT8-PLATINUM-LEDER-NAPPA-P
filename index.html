@@ -3,18 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Презентация автомобиля</title>
+    <title>KIA Sorento 2.2 CRDi AWD</title>
     <style>
-        body { font-family: Arial, sans-serif; background: #111; color: #fff; text-align: center; padding: 50px; }
-        .card { background: #222; padding: 30px; border-radius: 15px; display: inline-block; box-shadow: 0 4px 15px rgba(255,255,255,0.1); }
-        h1 { color: #e50914; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0b0c10; color: #c5c6c7; margin: 0; padding: 0; }
+        .header { background: linear-gradient(135deg, #1f2833, #0b0c10); padding: 40px 20px; text-align: center; border-bottom: 3px solid #66fcf1; }
+        .header h1 { color: #fff; margin: 0; font-size: 2.5em; letter-spacing: 2px; }
+        .badge { background: #66fcf1; color: #0b0c10; padding: 5px 15px; font-weight: bold; border-radius: 20px; display: inline-block; margin-top: 10px; }
+        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .gallery img { width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); transition: 0.3s; }
+        .gallery img:hover { transform: scale(1.03); }
+        .specs { background: #1f2833; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .specs h2 { color: #66fcf1; margin-top: 0; border-bottom: 1px solid #45a29e; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        tr { border-bottom: 1px solid #2f3b4c; }
+        tr:last-child { border-bottom: none; }
+        td { padding: 12px 10px; }
+        td.label { font-weight: bold; color: #45a29e; width: 40%; }
+        .btn-contact { display: block; background: #66fcf1; color: #0b0c10; text-decoration: none; text-align: center; padding: 15px; border-radius: 8px; font-weight: bold; margin-top: 30px; font-size: 1.2em; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
+        .btn-contact:hover { background: #45a29e; color: #fff; }
     </style>
 </head>
 <body>
-    <div class="card">
+
+    <div class="header">
         <h1>KIA SORENTO PLATINUM</h1>
-        <p>Комплектация: LEDER NAPPA</p>
-        <p>Статус: Доступно к заказу</p>
+        <div class="badge">2.2 CRDi | AWD | DCT8</div>
+        <p style="color: #45a29e; font-size: 1.1em;">Эксклюзивное предложение от Todes Auto • Салон Nappa Leder</p>
     </div>
+
+    <div class="container">
+        <!-- Галерея картинок -->
+        <div class="gallery">
+            <img src="photo1.jpg" alt="Kia Sorento вид спереди">
+            <img src="photo2.jpg" alt="Kia Sorento салон">
+            <img src="photo3.jpg" alt="Kia Sorento вид сзади">
+        </div>
+
+        <!-- Таблица технических характеристик -->
+        <div class="specs">
+            <h2>Технические характеристики</h2>
+            <table>
+                <tr>
+                    <td class="label">Двигатель</td>
+                    <td>2.2 л (Турбодизель CRDi)</td>
+                </tr>
+                <tr>
+                    <td class="label">Мощность</td>
+                    <td>194–202 л.с. (Проходной налог!)</td>
+                </tr>
+                <tr>
+                    <td class="label">Трансмиссия</td>
+                    <td>8-ступенчатый робот (DCT8 мокрого типа)</td>
+                </tr>
+                <tr>
+                    <td class="label">Привод</td>
+                    <td>Полный (AWD)</td>
+                </tr>
+                <tr>
+                    <td class="label">Комплектация</td>
+                    <td>Platinum (Кожа Nappa, максимальный пакет опций)</td>
+                </tr>
+                <tr>
+                    <td class="label">Статус</td>
+                    <td>Готов к отправке / В наличии</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Кнопка связи (замени слово 'твой_ник' на свой ник в Телеграм без значка @) -->
+        <a href="https://t.me/твой_ник" class="btn-contact" target="_blank">Связаться в Telegram / Заказать</a>
+    </div>
+
 </body>
 </html>
