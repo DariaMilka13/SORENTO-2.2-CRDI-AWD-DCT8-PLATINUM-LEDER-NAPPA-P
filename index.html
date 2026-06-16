@@ -39,7 +39,14 @@
         .adv-item h4 { margin: 0 0 10px 0; color: #fff; font-size: 1.2em; }
         .adv-item p { margin: 0; font-size: 0.95em; color: #95a5a6; }
 
-        .btn-contact { display: block; background: #66fcf1; color: #0b0c10; text-decoration: none; text-align: center; padding: 18px; border-radius: 8px; font-weight: bold; margin: 50px 0; font-size: 1.3em; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(102, 252, 241, 0.3); }
+        /* Блок контактов менеджера */
+        .manager-card { background: linear-gradient(135deg, #1f2833, #0f1a24); border: 2px solid #66fcf1; padding: 30px; border-radius: 12px; text-align: center; margin-top: 50px; box-shadow: 0 5px 20px rgba(102, 252, 241, 0.1); }
+        .manager-card h3 { color: #fff; margin: 0 0 5px 0; font-size: 1.6em; }
+        .manager-card .role { color: #66fcf1; font-weight: bold; text-transform: uppercase; font-size: 0.9em; letter-spacing: 1px; margin-bottom: 20px; display: block; }
+        .manager-phone { display: inline-block; color: #fff; font-size: 1.5em; text-decoration: none; font-weight: bold; margin-bottom: 20px; transition: 0.3s; }
+        .manager-phone:hover { color: #66fcf1; }
+
+        .btn-contact { display: block; background: #66fcf1; color: #0b0c10; text-decoration: none; text-align: center; padding: 18px; border-radius: 8px; font-weight: bold; font-size: 1.3em; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(102, 252, 241, 0.3); }
         .btn-contact:hover { background: #45a29e; color: #fff; box-shadow: 0 4px 15px rgba(69, 162, 158, 0.5); }
     </style>
 </head>
@@ -106,8 +113,16 @@
             </div>
         </div>
 
-        <!-- Кнопка связи -->
-        <a href="https://t.me/DariaMilka13" class="btn-contact" target="_blank">Получить предложение / Связаться</a>
+        <!-- Блок контактов Дарьи -->
+        <div class="manager-card">
+            <h3>Дарья</h3>
+            <span class="role">Ваш личный менеджер Todes Auto</span>
+            <div>
+                <a href="tel:+79380909342" class="manager-phone">+7 (938) 090-93-42</a>
+            </div>
+            <a href="https://t.me/DariaMilka13" class="btn-contact" target="_blank">Написать в Telegram</a>
+        </div>
+        
     </div>
 
 </body>
